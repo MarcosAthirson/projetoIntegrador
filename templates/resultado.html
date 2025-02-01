@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CURRÍCULO EM REDE</title>
+    <link href="../static/css/resultado.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sobre-voce">
+        <p>{{nome}}</p>
+        <p>{{genero}}</p>
+        <p>{{dataNasc}}</p>
+        <p>{{telefone}}</p>
+        <p>{{email}}</p>
+        <p>{{linkedin}}</p>
+        <p class="descricao">{{sobreVoce}}</p>
+    </div><!--sobre-voce-->
+
+    <h3>{{exp}}</h3>
+    <p>{{cargo}}</p>
+    <p>{{empresa}}</p>
+    <p>{{data}}</p>
+    <p class="descricao">{{atividades}}</p>
+
+    <h3>EDUCAÇÃO</h3>
+    <p>{{curso}}</p>
+    <p>{{instituicao}}</p>
+    <p>{{ano}}</p>
+
+    <h3 class="eduComp">{{eduComp}}</h3>
+    <ul class="listEduComp">
+        <li>{{comp1}}</li>
+        <li>{{comp2}}</li>
+        <li>{{comp3}}</li>
+        <li>{{comp4}}</li>
+    </ul>
+
+    <script src="../static/js/resultado/verifSessao.js"></script>
+    <script src="../static/js/resultado/print.js"></script>
+</body>
+</html>

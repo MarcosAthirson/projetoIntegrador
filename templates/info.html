@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CURRÍCULO EM REDE</title>
+    <link href="../static/css/info.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="center">
+            <a href="/"><img src="../static/imgs/arrow_back.png"></a>
+            <h1>LOGO</h1>
+        </div><!--center-->
+    </header>
+
+    <main>
+        <form class="center" action="/gerarCurriculo" method="post">
+            <div class="sobre-voce">
+                <h2>SOBRE VOCÊ</h2>
+                <label class="obrigatorio">
+                    <span>NOME:</span>
+                    <input type="text" placeholder="NOME" name="nome">
+                </label>
+
+                <label class="obrigatorio">
+                    <span>GÊNERO:</span>
+                    <input type="text" placeholder="GÊNERO" name="genero">
+                </label>
+
+                <label class="obrigatorio">
+                    <span>DATA DE NASCIMENTO:</span>
+                    <input type="text" placeholder="DATA DE NASCIMENTO" name="dataNas">
+                </label>
+
+                <label>
+                    <span>TELEFONE:</span>
+                    <input type="text" placeholder="TELEFONE" name="telefone">
+                </label>
+
+                <label class="obrigatorio">
+                    <span>E-MAIL:</span>
+                    <input type="text" placeholder="E-MAIL" name="email">
+                </label>
+
+                <label>
+                    <span>LINKEDIN:</span>
+                    <input type="text" placeholder="LINKEDIN" name="linkedin">
+                </label>
+
+                <label class="obrigatorio">
+                    <span>UM POUCO SOBRE VOCÊ:</span><textarea placeholder="UM POUCO SOBRE VOCÊ" name="sobreVoce"></textarea>
+                </label>
+            </div><!--sobre-voce-->
+
+            <div class="exp">
+                <h2>EXPERIÊNCIA</h2>
+                <label>
+                    <span>CARGO:</span>
+                    <input type="text" placeholder="CARGO" name="cargo">
+                </label>
+
+                <label>
+                    <span>EMPRESA:</span>
+                    <input type="text" placeholder="EMPRESA" name="empresa">
+                </label>
+
+                <label>
+                    <span>DATA (MÊS/ANO):</span>
+                    <input type="text" placeholder="DATA (MÊS/ANO)" name="data">
+                </label>
+
+                <label>
+                    <span>DESCRIÇÃO DAS ATIVIDADES:</span><textarea placeholder="DESCRIÇÃO DAS ATIVIDADES:" name="atividades"></textarea>
+                </label>
+            </div><!--exp-->
+
+            <div class="educacao" style="color:red;">
+                <h2>EDUCAÇÃO</h2>
+                <label class="obrigatorio">
+                    <span>CURSO:</span>
+                    <input type="text" placeholder="CURSO" name="curso">
+                </label>
+
+                <label class="obrigatorio">
+                    <span>INSTITUIÇÃO:</span>
+                    <input type="text" placeholder="INSTITUIÇÃO" name="instituicao">
+                </label>
+
+                <label class="obrigatorio">
+                    <span>ANO:</span>
+                    <input type="text" placeholder="ANO" name="ano">
+                </label>
+            </div><!--educacao-->
+
+            <div>
+                <h2>EDUCAÇÃO COMPLEMENTAR</h2>
+                <label>
+                    <span>COMPLEMENTO:</span>
+                    <input type="text" placeholder="NOME - DURAÇÃO" name="complemento1">
+                </label>
+
+                <label>
+                    <span>COMPLEMENTO:</span>
+                    <input type="text" placeholder="NOME - DURAÇÃO" name="complemento2">
+                </label>
+
+                <label>
+                    <span>COMPLEMENTO:</span>
+                    <input type="text" placeholder="NOME - DURAÇÃO" name="complemento3">
+                </label>
+
+                <label>
+                    <span>COMPLEMENTO:</span>
+                    <input type="text" placeholder="NOME - DURAÇÃO" name="complemento4">
+                </label>
+            </div>
+
+            <button>ENVIAR</button>
+        </form><!--center-->
+    </main>
+
+    <footer>
+        <p>TODOS OS DIREITOS RESERVADOR POR:</p>
+        <P>MARCOS ATHIRSON, JAMILLY FERNANDES</P>
+    </footer>
+
+    <div class="atalho-topo">
+        <img src="../static/imgs/topo.png" alt="">
+    </div><!--atalho-topo-->
+
+    <script src="../static/js/home/atalhoParaTopo.js"></script>
+    <script src="../static/js/info/validarInfo.js"></script>
+</body>
+</html>
